@@ -73,6 +73,7 @@ export default function Home() {
             community leadership.
           </p>
 
+          {/* Run Prompt pill button */}
           <div className="flex items-center gap-2 sm:gap-3 mt-6">
             <Image src="/gemini.png" alt="Gemini Logo" width={24} height={24} />
             <div className="px-4 sm:px-6 py-2 rounded-full bg-gray-900 border border-gray-700 text-gray-300 text-xs sm:text-sm font-medium">
@@ -83,7 +84,10 @@ export default function Home() {
 
           <p className="mt-6 text-base sm:text-lg font-semibold leading-relaxed px-2">
             👉 “Run all curated prompts that support and elevate my journey as a{" "}
-            <span className="text-yellow-400">Google Student Ambassador.</span>”
+            <span className="text-yellow-400">
+              Google Student Ambassador.
+            </span>
+            ”
           </p>
 
           <div className="flex items-center gap-2 mt-8">
@@ -114,13 +118,36 @@ export default function Home() {
                   </p>
                 </div>
                 <button
-                  onClick={() => window.open(p.url, "_blank")} // ✅ open in NEW TAB
+                  onClick={() => window.open(p.url, "_blank")} // opens in NEW TAB
                   className={`mt-6 border-2 px-4 py-2 rounded-lg transition font-medium ${p.button}`}
                 >
                   Open Prompt
                 </button>
               </div>
             ))}
+          </div>
+
+          {/* ✨ NEW COMMUNITY SECTION */}
+          <div className="mt-12 w-full max-w-3xl text-center">
+            <h2 className="text-xl sm:text-2xl font-bold text-gradient bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent mb-4">
+              Join our Gemini Community
+            </h2>
+            <div className="rounded-xl border-2 border-purple-400 bg-purple-900/20 p-6">
+              <p className="text-gray-300 mb-4">
+                Connect with other students, share ideas, and grow together!
+              </p>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://aiskillshouse.com/community?userId=2242",
+                    "_blank"
+                  )
+                }
+                className="border-2 border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-black px-6 py-2 rounded-lg font-medium transition"
+              >
+                Join Now
+              </button>
+            </div>
           </div>
         </div>
 
