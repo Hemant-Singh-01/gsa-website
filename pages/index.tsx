@@ -1,115 +1,134 @@
+import Head from "next/head";
 import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export default function Home() {
+  const prompts = [
+    { 
+      title: "Historical", 
+      desc: "Pick a popular historical movie (Bollywood/Tollywood etc.) and point out three major historical inaccuracies in a fun, myth-busting way.", 
+      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=2242&promptId=15", 
+      border: "border-yellow-400",
+      text: "text-yellow-400",
+      button: "border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black",
+      bg: "bg-yellow-900/20"
+    },
+    { 
+      title: "Weekend plan", 
+      desc: "I have a week-long break. Suggest a location where I can go with my friends for a weekend getaway.", 
+      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=2242&promptId=14", 
+      border: "border-green-400",
+      text: "text-green-400",
+      button: "border-green-400 text-green-400 hover:bg-green-400 hover:text-black",
+      bg: "bg-green-900/20"
+    },
+    { 
+      title: "Festive season", 
+      desc: "The festive season is here. Suggest 5 creative and eco-friendly ways to decorate my home or hostel room to give it a festive vibe.", 
+      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=2242&promptId=13", 
+      border: "border-blue-400",
+      text: "text-blue-400",
+      button: "border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black",
+      bg: "bg-blue-900/20"
+    },
+    { 
+      title: "Celebration", 
+      desc: "Help me plan a small, festive get-together for 5 friends at home. Suggest a simple menu, a music playlist.", 
+      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=2242&promptId=16", 
+      border: "border-purple-400",
+      text: "text-purple-400",
+      button: "border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-black",
+      bg: "bg-purple-900/20"
+    },
+    { 
+      title: "Personality", 
+      desc: "Ask me 5 short and simple, multiple choice questions about my personality, one by one, and then tell me what famous artist or designer I am most like.", 
+      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=2242&promptId=17", 
+      border: "border-red-400",
+      text: "text-red-400",
+      button: "border-red-400 text-red-400 hover:bg-red-400 hover:text-black",
+      bg: "bg-red-900/20"
+    },
+  ];
+
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20`}
-    >
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <>
+      <Head>
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" 
+          rel="stylesheet" 
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              pages/index.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      </Head>
+
+      <main className="min-h-screen flex flex-col justify-between bg-black text-white"
+        style={{ fontFamily: "'Poppins', sans-serif" }}
+      >
+        {/* 🔥 HEADER SECTION */}
+        <section className="flex flex-col items-center text-center px-4 sm:px-6 py-10 sm:py-12 max-w-3xl mx-auto">
+          {/* Gradient Title */}
+          <h1 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-400 via-green-400 to-yellow-400 bg-clip-text text-transparent">
+            Google Student Ambassador
+          </h1>
+          <p className="text-gray-400 mt-2 text-xs sm:text-base leading-relaxed px-2">
+            empowering students with Google technologies, innovation, and community leadership.
+          </p>
+
+          {/* Run Prompt pill button with gemini icons on sides */}
+          <div className="flex items-center gap-2 sm:gap-3 mt-6">
+            <Image src="/gemini.png" alt="Gemini Logo" width={24} height={24} />
+            <div className="px-4 sm:px-6 py-2 rounded-full bg-gray-900 border border-gray-700 text-gray-300 text-xs sm:text-sm font-medium">
+               Run Prompt
+            </div>
+            <Image src="/gemini.png" alt="Gemini Logo" width={24} height={24} />
+          </div>
+
+          {/* Hand emoji text */}
+          <p className="mt-6 text-base sm:text-lg font-semibold leading-relaxed px-2">
+            👉 “Run all curated prompts that support and elevate my journey as a <span className="text-yellow-400">Google Student Ambassador.</span>”
+          </p>
+
+          {/* Google Gemini logo text */}
+          <div className="flex items-center gap-2 mt-8">
+            <Image src="/gemini.png" alt="Gemini Logo" width={24} height={24} />
+            <span className="text-white font-bold text-lg sm:text-xl">Google Gemini</span>
+            <Image src="/gemini.png" alt="Gemini Logo" width={24} height={24} />
+          </div>
+        </section>
+
+        {/* 🔲 PROMPTS GRID */}
+        <div className="flex flex-col items-center p-4 sm:p-8 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 w-full max-w-6xl">
+            {prompts.map((p, i) => (
+              <div 
+                key={i} 
+                className={`rounded-xl p-4 sm:p-6 flex flex-col justify-between hover:shadow-xl transition border-2 ${p.border} ${p.bg}`}
+              >
+                <div>
+                  <h2 className={`text-base sm:text-lg font-bold mb-3 ${p.text}`}>{p.title}</h2>
+                  <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">{p.desc}</p>
+                </div>
+                <button
+                  onClick={() => window.location.href = p.url} // opens in SAME TAB
+                  className={`mt-6 border-2 px-3 sm:px-4 py-2 rounded-lg transition font-medium text-xs sm:text-base ${p.button}`}
+                >
+                  Open Prompt
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
+
+        {/* FOOTER */}
+        <footer className="py-6 px-4 text-center text-xs sm:text-sm text-gray-400 border-t border-gray-700">
+          <div className="flex justify-center items-center gap-2 sm:gap-3 flex-wrap">
+            <Image src="/gemini.png" alt="Gemini Logo" width={20} height={20} />
+            <p className="text-white font-semibold flex items-center gap-1 sm:gap-2 text-xs sm:text-base">
+              Google Student Ambassador
+            </p>
+            <Image src="/gemini.png" alt="Gemini Logo" width={20} height={20} />
+          </div>
+          <p className="text-gray-400 mt-1 text-xs sm:text-sm">Thank you for your support.</p>
+        </footer>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    </>
   );
 }
