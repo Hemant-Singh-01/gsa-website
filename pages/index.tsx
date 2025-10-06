@@ -33,7 +33,7 @@ export default function Home() {
     {
       title: "Celebration",
       desc: "Help me plan a small, festive get-together for 5 friends at home. Suggest a simple menu, a music playlist.",
-      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=1196&promptId=16",
+      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=11196&promptId=16",
       border: "border-purple-400",
       text: "text-purple-400",
       button: "border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-black",
