@@ -6,7 +6,7 @@ export default function Home() {
     {
       title: "Historical",
       desc: "Pick a popular historical movie (Bollywood/Tollywood etc.) and point out three major historical inaccuracies in a fun, myth-busting way.",
-      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=2242&promptId=15",
+      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=11196&promptId=15",
       border: "border-yellow-400",
       text: "text-yellow-400",
       button: "border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black",
@@ -15,7 +15,7 @@ export default function Home() {
     {
       title: "Weekend plan",
       desc: "I have a week-long break. Suggest a location where I can go with my friends for a weekend getaway.",
-      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=2242&promptId=14",
+      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=11196&promptId=14",
       border: "border-green-400",
       text: "text-green-400",
       button: "border-green-400 text-green-400 hover:bg-green-400 hover:text-black",
@@ -24,7 +24,7 @@ export default function Home() {
     {
       title: "Festive season",
       desc: "The festive season is here. Suggest 5 creative and eco-friendly ways to decorate my home or hostel room to give it a festive vibe.",
-      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=2242&promptId=13",
+      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=11196&promptId=13",
       border: "border-blue-400",
       text: "text-blue-400",
       button: "border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black",
@@ -33,7 +33,7 @@ export default function Home() {
     {
       title: "Celebration",
       desc: "Help me plan a small, festive get-together for 5 friends at home. Suggest a simple menu, a music playlist.",
-      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=2242&promptId=16",
+      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=1196&promptId=16",
       border: "border-purple-400",
       text: "text-purple-400",
       button: "border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-black",
@@ -42,7 +42,7 @@ export default function Home() {
     {
       title: "Personality",
       desc: "Ask me 5 short and simple, multiple choice questions about my personality, one by one, and then tell me what famous artist or designer I am most like.",
-      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=2242&promptId=17",
+      url: "https://aiskillshouse.com/student/qr-mediator.html?uid=11196&promptId=17",
       border: "border-red-400",
       text: "text-red-400",
       button: "border-red-400 text-red-400 hover:bg-red-400 hover:text-black",
@@ -139,7 +139,7 @@ export default function Home() {
               <button
                 onClick={() =>
                   window.open(
-                    "https://aiskillshouse.com/community?userId=2242",
+                    "https://aiskillshouse.com/community?userId=11196",
                     "_blank"
                   )
                 }
